@@ -6,7 +6,7 @@ class HardDeskData {
   }
   loadData(){
     data = {"name":"Ahmed", "id" : 13, "age" : 23, "male":true };
-    //... we write logic here fore example ^^^
+    //... we write logic here for example ^^^
   }
 }
 class GetDataFromDesk {
