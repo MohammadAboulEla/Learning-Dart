@@ -5,7 +5,7 @@ class HardDeskData {
     return this; // return data in this copy
   }
   loadData(){
-    data = {"name":"Mohammed", "id" : 13, "age" : 23, "male":true };
+    data = {"name":"Dina", "id" : 13, "age" : 23, "male":true };
     //... we write logic here for example ^^^
   }
 }
