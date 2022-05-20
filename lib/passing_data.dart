@@ -1,5 +1,5 @@
 class HardDeskData {
-  Map<String,dynamic>? data; //can be null
+  Map<String,dynamic>? data; //using ? mean it can be null
   init() {
     loadData();
     return this; // return data in this copy
@@ -10,7 +10,7 @@ class HardDeskData {
   }
 }
 class GetDataFromDesk {
-  late Map<String,dynamic> myData; //can't be null
+  late Map<String,dynamic> myData; //using late mean it can't be null
   var defaultData = {"name":"n/a", "id" : "n/a", "age" : "n/a", "male":"n/a"};
   init() {
     var loading = HardDeskData().init().data ?? defaultData;
