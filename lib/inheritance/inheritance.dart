@@ -3,14 +3,14 @@ void main(List<String> arguments) {
   man.tellYourStory();
 }
 
-class Actions {
+class Action {
   thinking() async{
     await Future.delayed(Duration(seconds: 1));
     print("...");
     await Future.delayed(Duration(seconds: 1));
   }
 }
-class Creature extends Actions{
+class Creature extends Action{
   tellYourStory(){
     print("I am a Creature");
   }

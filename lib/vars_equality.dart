@@ -46,6 +46,7 @@ void main() {
 
 }
 
+
 // الكلاس بعد التعديل
 class Suspect {
   String name;
