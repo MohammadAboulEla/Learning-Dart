@@ -8,6 +8,8 @@ environment:
 
 # dependencies:
 #   path: ^1.8.0
+dependencies:
+  http: ^0.13.4
 
 dev_dependencies:
   lints: ^2.0.0
