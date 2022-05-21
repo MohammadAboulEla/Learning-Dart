@@ -49,6 +49,3 @@ void main(){
 // I'm (B) so I will play animation
 // I'm (C) so I show notification
 // I'm (D) so I will update the score text
-
-
-
