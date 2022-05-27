@@ -1,8 +1,8 @@
-import 'package:learning_dart/learning_dart.dart';
+import 'package:learning_dart/simple_functions.dart';
 import 'package:test/test.dart';
 
 void main() {
   test('calculate', () {
-    expect(calculate(), 2);
+    expect(calculate(), 42);
   });
 }

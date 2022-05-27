@@ -1,34 +1,24 @@
 
 abstract class Action {
-  whenUserSwipe(){}
+  whenUserSwipe() {}
+  static List swipeSubscribers = [];
 }
-
-mixin Subscribers {
-static List swipeSubscribers = [];
-}
-
-class A with Subscribers implements Action  {
-  A(){
-    Subscribers.swipeSubscribers.add(this);
-  }
+class A implements Action  {
+  A(){Action.swipeSubscribers.add(this);}
   @override
   whenUserSwipe(){
     print("I'm (A) so I will play sound");
   }
 }
-class B with Subscribers implements Action{
-  B(){
-    Subscribers.swipeSubscribers.add(this);
-  }
+class B implements Action{
+  B(){Action.swipeSubscribers.add(this);}
   @override
   whenUserSwipe(){
     print("I'm (B) so I will play animation");
   }
 }
-class C with Subscribers implements Action{
-  C(){
-    Subscribers.swipeSubscribers.add(this);
-  }
+class C implements Action{
+  C(){Action.swipeSubscribers.add(this);}
   @override
   whenUserSwipe(){
     print("I'm (C) so I show notification");
@@ -36,10 +26,8 @@ class C with Subscribers implements Action{
 }
 
 // نعيد تعيين دوال الحدث في كل كلاس بهذا الشكل
-class D with Subscribers implements Action{
-  D(){
-    Subscribers.swipeSubscribers.add(this);
-  }
+class D implements Action{
+  D(){Action.swipeSubscribers.add(this);}
   @override
   whenUserSwipe(){
     print("I'm (D) so I will update the score text");
@@ -49,8 +37,9 @@ class D with Subscribers implements Action{
 
 // نطلب من كل منهم ان يقوم بوظيفته
 void main(){
-
-for(var i in Subscribers.swipeSubscribers) {i.whenUserSwipe();}
+var a = A();
+var b = B();
+for(var i in Action.swipeSubscribers) {i.whenUserSwipe();}
 
 }
 // Result
