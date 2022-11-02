@@ -4,5 +4,6 @@
 
 # Conventional directory for build output.
 build/
-/lib/temp/
-/lib/temp/hassan_fulaih
+/lib/aatemp/
+/lib/aaignor/
+/lib/aatemp/hassan_fulaih
