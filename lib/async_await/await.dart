@@ -1,6 +1,7 @@
-void main () {
+void main () async{
   print("start");
-  delay();
+  await delay();
+  print("end");
 }
 
 delay () async{
